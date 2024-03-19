@@ -1,0 +1,113 @@
+/**
+ *  Sidebar Style
+ **/
+
+aside.site-sidebar {
+
+  margin: 0;
+  padding: 0;
+
+  ul {
+    list-style: none;
+  }
+
+  // Widget
+  .widget {
+    margin-bottom: 60px;
+
+    // Widget Header
+    header.widget-header {
+      padding: 24px 30px;
+      color: $color-sidebar-title;
+      margin-bottom: 30px;
+      background-color: $color-sidebar-header;
+
+      h4.widget-title {
+        font-size: 1.25rem;
+        text-transform: uppercase;
+      }
+    }
+
+  }
+
+  // Categories Widget
+  .categories-widget {
+    .widget-content {
+
+      ul.categories-box {
+        margin: 0;
+        padding: 0;
+
+        li {          
+          a {
+            display: block;
+            padding: 20px 30px;
+            border-bottom: 1px solid $color-sidebar-header;
+
+            .cat-count {
+              float: right;
+              margin-top: -3px;
+              padding: 5px 6px;
+              border-radius: 3px;
+              background: $color-sidebar-header;
+              font-size: 0.6875rem;
+              transition: color, background $transition-links $transition-links-type;
+            }
+
+            color: $color-gray-5;
+
+            &:hover {
+              color: $color-light-link;
+
+              .cat-count {
+                color: $color-white;
+                background: $color-light-link;
+                font-weight: bold;
+              }
+            }
+
+          }
+
+          &:last-child {
+            a {
+              border-bottom: 0;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  // Tags Widget
+  .tags-widget {
+    .widget-content {
+
+      ul.tag-box {
+        margin: 0;
+        padding: 0;
+
+        li {
+          float: left;
+          margin: 0 10px 10px 0;
+
+          a {
+            display: block;
+            padding: 8px 12px;
+            color: $color-gray-4;
+            border: 1px solid $color-gray-3;
+
+            &:hover {
+              color: $color-white;
+              border-color: $color-light-primary;
+              background: $color-light-primary;
+            }
+          }
+        }
+
+      }
+
+    }
+  }
+
+}

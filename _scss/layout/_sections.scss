@@ -1,0 +1,57 @@
+/**
+ *  General Sections Style
+ **/
+
+// Default site section styling
+section.site-section {
+  padding: $section-top-space $section-side-space 0;
+  background: $color-section-bg;
+  content-visibility: auto;
+
+  // Scroll margin when smaller than mobile break
+  @media (max-width: $mobile-break) {
+    scroll-margin-top: $navbar-offset-mobile;
+  }
+
+  // Scroll margin when larger than mobile break
+  @media (min-width: $mobile-break) {
+    scroll-margin-top: $navbar-offset-full;
+  }
+
+  // Section Header
+  header.section-header {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+
+    border-bottom: 1px solid $color-light-secondary;
+    margin: 0 1em 2em 1em;
+
+    font-weight: bold;
+    color: $color-light-primary;
+
+    hr.normal {
+      margin: 1.55em auto;
+    }
+  }
+
+  .section-content {
+    .lead {
+      font-size: 1.25em;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    blockquote {
+      font-size: 1.15em;
+      text-align: center;
+      text-align-last: center;
+    }
+  }
+
+  // Section Focus
+  &.section-focus {
+    background-color: $color-section-focus;
+  }
+
+}

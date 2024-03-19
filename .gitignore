@@ -1,0 +1,11 @@
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# avoid problems with github-pages gem
+Gemfile.lock
+
+# ignore node modules that are used for dev commands
+/node_modules
+/package-lock.json

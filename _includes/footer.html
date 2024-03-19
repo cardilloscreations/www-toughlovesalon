@@ -1,0 +1,25 @@
+<footer class="site-footer" id="footer">
+
+  <div class="d-flex-column justify-content-center">
+
+    <div class="footer-legal">
+      <div class="footer-text">
+        <p class="d-flex flex-column flex-sm-row text-center justify-content-center">
+          <a class="pb-1 pb-sm-0" href="{% link legal/privacy.html %}">
+            Privacy Policy
+          </a>
+          <span class="d-none d-sm-block px-3 fw-semibold" aria-disabled="true">|</span>
+          <a class="pb-1 pb-sm-0" href="{% link legal/terms.html %}">
+            Terms of Use
+          </a>
+        </p>
+        <p class="d-flex flex-column flex-sm-row text-center justify-content-center">
+          <span>Copyright &copy; {{ site.footer-copyright-year }}</span>
+          <span class="d-none d-sm-block">&nbsp;</span>
+          <span>by {{ site.footer-copyright-text }}</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+</footer>

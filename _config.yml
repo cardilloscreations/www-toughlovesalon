@@ -1,0 +1,74 @@
+#
+# Configuration File
+#
+
+# Enable additional diagnostics
+verbose: true
+profile: true
+
+# Information for compile
+exclude:
+  - "CNAME"
+  - "LICENSE"
+  - "README.md"
+  - "DEVELOPMENT.md"
+  - "ATTRIBUTIONS.md"
+  - "_posts/README.md"
+  - "*.js"
+  - "*.json"
+  - "assets/images/favicon/*.webmanifest"
+  - "assets/images/favicon/*.md"
+  - "assets/images/favicon/*.html"
+  - "assets/images/favicon/*.xml"
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+
+# Sass configuration
+sass:
+  sass_dir: _scss
+
+# Information for deploy
+baseurl: ""
+
+# the base hostname & protocol for your site
+url: "https://toughlove.salon"
+
+assets_path:  assets
+css_path:     assets/css
+images_path:  assets/images
+
+##
+## HEADER INFORMATION
+##
+
+# This is the site title
+title: Tough Love Salon
+# This is the site description - must be between 25 and 160 characters for Bing SEO
+description: >
+  Tough Love Salon is now closed, but was an upscale hair salon in Severna Park, Maryland from 2018 until 2024.
+
+# Website language
+lang: en-US
+# Header Title
+header-title: Tough Love Salon
+# Header Tagline
+header-tagline1: Tough Love Salon is CLOSED
+header-tagline2: Read Below For More Details
+
+# The general contact default email address
+email: hello@toughlove.salon
+
+##
+## Global Images
+##
+default-image: default.webp
+email-icon: icons/email.svg
+
+#
+##
+## Footer
+##
+footer-copyright-text: Tough Love Salon, LLC
+footer-copyright-year: 2018

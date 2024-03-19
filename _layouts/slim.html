@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {%- include header/nav-bar.html -%}
+
+    {% include header/header-slim.html %}
+
+    <section class="site-section page-layout" id="start">
+      <div class="container">
+
+        {{ content }}
+
+      </div>
+    </section>
+
+    {% include footer.html %}
+
+    {%- include scripts/ext-scripts.html -%}
+
+  </body>
+
+</html>

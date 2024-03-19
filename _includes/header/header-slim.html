@@ -1,0 +1,19 @@
+<header class="site-header slim-header">
+
+  {%- comment %} Site Header Banner {% endcomment -%}
+  <div class="header-banner">
+
+    <img src="{% link {{ site.images_path }}/header-image.slim.webp %}" alt="{{ site.header-title }}" fetchpriority="high">
+
+    <div class="heading-content text-center position-absolute top-50 start-50 translate-middle">
+
+      {%- comment %} Heading Title {% endcomment -%}
+      <div class="row heading-title">
+        <h1 class="thin">{% if page.type %}<strong>{{page.type}}: </strong>{% endif %}{{ page.title }}</h1>
+      </div>
+
+    </div>
+
+  </div>
+
+</header>

@@ -29,6 +29,16 @@ plugins:
 sass:
   sass_dir: _scss
 
+# Collections
+collections_dir: _collections
+collections:
+  team_owners:
+    sort_by: order
+    member_type: owner
+  vcards:
+    sort_by: order
+    output: true
+
 # Information for deploy
 baseurl: ""
 
@@ -38,6 +48,7 @@ url: "https://toughlove.salon"
 assets_path:  assets
 css_path:     assets/css
 images_path:  assets/images
+vcards_path:  assets/vcards
 
 ##
 ## HEADER INFORMATION
@@ -54,7 +65,7 @@ lang: en-US
 # Header Title
 header-title: Tough Love Salon
 # Header Tagline
-header-tagline1: Tough Love Salon is CLOSED
+header-tagline1: Tough Love Salon is now <b>CLOSED</b>
 header-tagline2: Read Below For More Details
 
 # The general contact default email address
@@ -65,6 +76,9 @@ email: hello@toughlove.salon
 ##
 default-image: default.webp
 email-icon: icons/email.svg
+link-icon: icons/link.svg
+instagram-icon: icons/instagram.svg
+linkedin-icon: icons/linkedin.svg
 
 #
 ##
